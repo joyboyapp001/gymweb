@@ -1,0 +1,52 @@
+img {
+    background-color: #e6e6fa;
+    padding: 6px;
+    width: 30%;
+}
+
+/* class=banner" =>img */
+.banner img {
+    width: 100%;
+}
+
+
+li {
+    text-align: left;
+}
+
+small a {
+    color: black;
+}
+
+table {
+    width: 80%;
+    margin: 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    height: 250px;
+}
+
+th {
+    background-color: #23363f;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+td {
+    color: aquamarine;
+    background-color: cadetblue;
+}
+
+td:first-child {
+    background-color: #181820;
+}
+
+/* 奇數行 */
+td:nth-child(odd) {
+    background-color: #181820;
+}
+
+/* 偶數行 */
+td:nth-child(even) {
+    background-color: #171786;
+}

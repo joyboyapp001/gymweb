@@ -3,105 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>健身網站</title>
-    <style>
-        body {
-            background-color: #146C94;
-            color: rgb(255, 255, 255);
-            font-family: 標楷體;
-            text-align: center;
-        }
-
-        /* 對應class="sub-title" */
-        .sub-title {
-            background-color: #e6e6fa;
-            color: #146C94;
-            /* irem=>16px */
-            font-size: 1.5px;
-            text-align: left;
-            margin: 12px;
-            padding: 6px;
-        }
-
-        .title {
-            font-size: 2rem;
-            border-radius: 6px;
-            margin: 12px;
-            padding: 16px 12px;
-            text-align: center;
-        }
-
-        span {
-            border-radius: 6px;
-            font-size: 1.5rem;
-        }
-
-        #container {
-            width: 80%;
-            margin: 12px auto;
-        }
-
-        img {
-            background-color: #e6e6fa;
-            padding: 6px;
-            width: 30%;
-        }
-
-        /* class=banner" =>img */
-        .banner img {
-            width: 100%;
-        }
-
-        a {
-            color: pink;
-        }
-
-        /* 訪問後的顏色 */
-        a:visited {
-            color: rgb(255, 127, 127);
-        }
-
-        /* 移到上方的顏色 */
-        a:hover {
-            color: lightgreen;
-        }
-
-        li {
-            text-align: left;
-        }
-
-        small a {
-            color: black;
-        }
-
-        table {
-            width: 80%;
-            margin: 0px auto;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 12px;
-        }
-
-        th {
-            background-color: #23363f;
-            color: whitesmoke;
-            font-size: 1rem;
-        }
-
-        td {
-            color: aquamarine;
-            background-color: cadetblue;
-        }
-    </style>
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
     <div id="container">
         <!-- 註解區 -->
-        <div class="sub-title title">&spades;&nbsp;何謂健身?</div>
+        <div class="title">&spades;&nbsp;何謂健身?</div>
         <div style="color : white;font-family: 微軟正黑體;">
             <h3>
                 健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
@@ -209,11 +120,12 @@
 
         <hr>
         <div class="sub-title">影片介紹</div>
-        <iframe width="45%" height="534" src="https://www.youtube.com/embed/MzLZXUnekuI"
+        <br>
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/MzLZXUnekuI"
             title="健身房新手【4天練全身課表】每天只做CP值最高的三個精華動作！│健人訓練│ 2021ep31" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <iframe width="45%" height="534" src="https://www.youtube.com/embed/Vb287LMSwlw"
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Vb287LMSwlw"
             title="30分鐘爆汗燃脂+核心訓練│無須器材、無跳躍、不傷手腕│跟著我甩掉多餘體脂肪！30 Min Athome fat burn, no equipment needed, no jumping"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -223,16 +135,16 @@
 
         <hr>
         <h2>表單填寫</h2>
-        <form action="">
-            <label for="email">帳號</label>
+        <form action="" method="get">
+            <label for="email">email</label>
             <input type="email" id="email" name="email">
             <br>
-            <label for="password">密碼</label>
-            <input type="password" id="password" name="password">
-            <input type="file">
-
+            <label for="command">意見</label>
+            <br>
+            <textarea id="command" name="command" cols="25" rows="20"></textarea>
             <p>
                 <button type="submit">提交</button>
+                <button type="reset">清除</button>
             </p>
         </form>
     </div>
