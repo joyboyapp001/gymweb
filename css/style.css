@@ -97,7 +97,9 @@ span {
             height: 400px;
         }
 
-        textarea {}
+        textarea {
+            height: 200px;
+        }
 
         .sub-title {
             width: 200px;
